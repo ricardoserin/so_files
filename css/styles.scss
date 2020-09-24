@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap');
+
+body{
+  margin: 0;
+  display: grid;
+  grid-template-rows: 75px auto;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: #fafafa;
+  font-family: Cabin;
+
+}
+
+.header{
+  &__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 75px;
+    width:100%;
+    background: #DEE3E4;
+  }
+  &__escuela{
+    font-size:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 850px){
+      font-size: 8px;
+      text-align: center;
+    }
+  }
+  &__universidad{
+    &-logo{
+      height: 70px;
+
+    }
+
+  }
+  &__curso{
+    font-size:10px;
+    float: rigth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 850px){
+      font-size: 8px;
+      text-align: center;
+    }
+  }
+}
+
+.information{
+  margin: 0 32px;
+  &__devs{
+    &-container{
+      padding-left:10px;
+
+    }
+    &-title{
+      font-size:20px;
+    }
+  }
+  &__dev{
+    margin: 4px 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-photo{
+      height: 40px;
+      border-radius: 50%;
+      margin: 0 8px;
+    }
+  }
+}
+
+.form{
+  @media screen and (max-width: 850px){
+    width: 90%;
+  }
+  &-container{
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid #ccc;
+    align-items: center;
+  }
+  &__formula{
+    margin: 32px 0;
+    border: 2px solid #1f1f1f;
+    border-radius: 32px;
+    padding: 8px 64px;
+    background: #DEE3E4;
+    @media screen and (max-width: 850px){
+      padding: 8px 16px;
+      margin: 16px 8px;
+    }
+  }
+  &__datos{
+    margin: 32px 0;
+    border: 2px solid #1f1f1f;
+    border-radius: 32px;
+    padding: 8px 64px;
+    background: #DEE3E4;
+    @media screen and (max-width: 850px){
+      padding: 8px 16px;
+      margin: 16px 8px;
+  
+    }
+  }
+  width: 60%;
+  
+}
+
+section{
+  min-height: calc(100vh - 75px);
+  height: calc(100vh - 75px);
+  max-height: calc(100vh - 75px);
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 30% auto;
+  @media screen and (max-width: 850px){
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+}
+
+label{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+input{
+  height: 16px;
+  border-radius: 8px;
+  text-align: right;
+  padding: 2px 4px;
+  border: 1px solid;
+}
+
+.button{
+  height: 32px;
+  background: #cccccc;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    background: #f0f0f0;
+  }
+
+  &-container{
+    display: flex;
+    flex-direction: row-reverse;;
+  }
+}
+
+select{
+  height: 30px;
+  border-radius: 8px;
+  padding: 3px;
+  min-width: 300px;
+  @media screen and (max-width: 850px){
+    min-width: auto;
+    max-width: 200px;
+  }
+}
+
+.resultado{
+  width: 100%;
+  font-weight: bold;
+  font-size: large;
+  &-container{
+    width: 100%;
+    display: flex;
+  }
+}
+.hidden{
+  display: none;
+}
+
+.menu{
+  &-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-left: 1px solid #ccc;
+    align-items: center;
+    padding: 64px 20%;
+    
+  }
+  &__item{
+    &-container{
+      padding: 4px 8px;
+      //border: 1px solid red;
+      width: 250px;
+    }
+    &-icon{
+      font-size: 100px;
+      margin: 8px 0;
+      &--word{
+        color: darkblue;
+        &:hover{
+          
+        }
+      }
+      &--ppt{
+        color: orangered;
+      }
+      &--app{
+        color: darkcyan;
+      }
+      &--video{
+        color: darkslateblue;
+      }
+    }
+    &-link{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #ccc1cc;
+      font-weight: bold;
+      font-size: 24px;
+      &:hover{
+        color: black;
+        & .menu__item-icon{
+          font-size: 110px;
+          //color: blue;
+        }
+      }
+    }
+  }
+}

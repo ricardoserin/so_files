@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap");
+body {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 75px auto;
+  grid-template-rows: 75px auto;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: #fafafa;
+  font-family: Cabin; }
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 75px;
+  width: 100%;
+  background: #DEE3E4; }
+
+.header__escuela {
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 850px) {
+    .header__escuela {
+      font-size: 8px;
+      text-align: center; } }
+
+.header__universidad-logo {
+  height: 70px; }
+
+.header__curso {
+  font-size: 10px;
+  float: rigth;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 850px) {
+    .header__curso {
+      font-size: 8px;
+      text-align: center; } }
+
+.information {
+  margin: 0 32px; }
+  .information__devs-container {
+    padding-left: 10px; }
+  .information__devs-title {
+    font-size: 20px; }
+  .information__dev {
+    margin: 4px 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .information__dev-photo {
+      height: 40px;
+      border-radius: 50%;
+      margin: 0 8px; }
+
+.form {
+  width: 60%; }
+  @media screen and (max-width: 850px) {
+    .form {
+      width: 90%; } }
+  .form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-left: 1px solid #ccc;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .form__formula {
+    margin: 32px 0;
+    border: 2px solid #1f1f1f;
+    border-radius: 32px;
+    padding: 8px 64px;
+    background: #DEE3E4; }
+    @media screen and (max-width: 850px) {
+      .form__formula {
+        padding: 8px 16px;
+        margin: 16px 8px; } }
+  .form__datos {
+    margin: 32px 0;
+    border: 2px solid #1f1f1f;
+    border-radius: 32px;
+    padding: 8px 64px;
+    background: #DEE3E4; }
+    @media screen and (max-width: 850px) {
+      .form__datos {
+        padding: 8px 16px;
+        margin: 16px 8px; } }
+
+section {
+  min-height: calc(100vh - 75px);
+  height: calc(100vh - 75px);
+  max-height: calc(100vh - 75px);
+  overflow-y: scroll;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+  grid-template-columns: 30% auto; }
+  @media screen and (max-width: 850px) {
+    section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; } }
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 16px 0; }
+
+input {
+  height: 16px;
+  border-radius: 8px;
+  text-align: right;
+  padding: 2px 4px;
+  border: 1px solid; }
+
+.button {
+  height: 32px;
+  background: #cccccc;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+  cursor: pointer; }
+  .button:hover {
+    background: #f0f0f0; }
+  .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+
+select {
+  height: 30px;
+  border-radius: 8px;
+  padding: 3px;
+  min-width: 300px; }
+  @media screen and (max-width: 850px) {
+    select {
+      min-width: auto;
+      max-width: 200px; } }
+
+.resultado {
+  width: 100%;
+  font-weight: bold;
+  font-size: large; }
+  .resultado-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.hidden {
+  display: none; }
+
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-left: 1px solid #ccc;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 64px 20%; }
+
+.menu__item-container {
+  padding: 4px 8px;
+  width: 250px; }
+
+.menu__item-icon {
+  font-size: 100px;
+  margin: 8px 0; }
+  .menu__item-icon--word {
+    color: darkblue; }
+  .menu__item-icon--ppt {
+    color: orangered; }
+  .menu__item-icon--app {
+    color: darkcyan; }
+  .menu__item-icon--video {
+    color: darkslateblue; }
+
+.menu__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ccc1cc;
+  font-weight: bold;
+  font-size: 24px; }
+  .menu__item-link:hover {
+    color: black; }
+    .menu__item-link:hover .menu__item-icon {
+      font-size: 110px; }
+
+/*# sourceMappingURL=styles.css.map */
